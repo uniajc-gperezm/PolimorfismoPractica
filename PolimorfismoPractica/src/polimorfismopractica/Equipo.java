@@ -50,10 +50,12 @@ public class Equipo {
         return ciclistas;
     }
 
+    public void anadirCiclista(Ciclista ciclista){}
+    
     public void imprimirDatosEquipo(){}
     
     public void listarNombresCiclistas(){}
     
-    public void imprimirDatosCiclistasPorId(){}
+    public void imprimirDatosCiclistasPorId(int id){}
     
 }

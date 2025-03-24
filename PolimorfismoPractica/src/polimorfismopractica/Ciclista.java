@@ -50,7 +50,7 @@ public abstract class Ciclista {
         System.out.println("Id" + identificador);
         System.out.println("Id" + identificador);
         System.out.println("Nombre" + name);
-        System.out.println("Tiempo Acumulado" + tiempoAcumulado + "minutos");
+        System.out.println("Tiempo Acumulado" + tiempoAcumulado + "min");
 
     }
 

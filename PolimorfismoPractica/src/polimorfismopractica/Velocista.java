@@ -33,6 +33,13 @@ public class Velocista extends Ciclista {
     public String imprimirTipo() {
         return "es velocista";
     }
-    
+
+    @Override
+    public void imprimirDatos() {
+        super.imprimirDatos();
+        System.out.println("potencia promedio" + potencialPromedio);
+        System.out.println("Velocidad Sprint" + velocidadSprint);
+
+    }
 
 }

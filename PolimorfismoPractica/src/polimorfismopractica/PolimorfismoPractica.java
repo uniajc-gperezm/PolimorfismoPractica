@@ -4,17 +4,44 @@
  */
 package polimorfismopractica;
 
+import java.util.Scanner;
+
 /**
  *
  * @author g.perezmoreno
  */
 public class PolimorfismoPractica {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner jk = new Scanner (System.in);
+        Equipo equipo = new Equipo("Team A", "Colombia");
+        
+        Velocista Ve1 = new Velocista(1, "Rigo", 450, 60);
+        Escalador Es1 = new Escalador(2, "Nairo Quintana", 2.5f, 15);
+        Contrarrelojista Contra1 = new Contrarrelojista (3, "Juan", 55);
+        
+        Ve1.setTiempoAcumulado(110);
+        Es1.setTiempoAcumulado(120);
+        Contra1.setTiempoAcumulado(100);
+        
+        equipo.añadirCiclista(Ve1);
+        System.out.println("");
+        equipo.añadirCiclista(Es1);
+        System.out.println("");
+        equipo.añadirCiclista(Contra1);
+        System.out.println("");
+        equipo.listarNombresCiclistas();
+        System.out.println("");
+        equipo.calcularTiempoTotal();
+        System.out.println("");
+        equipo.imprimirDatosEquipo();
+        System.out.println("");
+        
+        System.out.println("Ingresar el ID que desea buscar: ");
+        int idEncontrado = jk.nextInt();
+        equipo.imprimirDatosCiclistaPorId(idEncontrado);
+        
+        jk.close();
     }
     
 }

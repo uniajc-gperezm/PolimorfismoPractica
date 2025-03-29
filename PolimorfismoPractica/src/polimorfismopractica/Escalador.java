@@ -1,11 +1,20 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package polimorfismopractica;
 
-public abstract class Escalador extends Ciclista {
+/**
+ *
+ * @author EIMY TATIANA CORAL M
+ */
+
+public class Escalador extends Ciclista {
     private float aceleracionPromedio;
     private float gradoRampa;
 
-    public Escalador(int id, String nombre, float aceleracionPromedio, float gradoRampa) {
-        super(id, nombre);
+    public Escalador(int identificador, String nombre, float aceleracionPromedio, float gradoRampa) {
+        super(identificador, nombre);
         this.aceleracionPromedio = aceleracionPromedio;
         this.gradoRampa = gradoRampa;
     }
@@ -25,17 +34,14 @@ public abstract class Escalador extends Ciclista {
     public void setGradoRampa(float gradoRampa) {
         this.gradoRampa = gradoRampa;
     }
-    
+
     @Override
     public String imprimirTipo() {
-        return "Escalador";
+        return "Es un Escalador";
     }
 
     @Override
     public void imprimirDatos() {
-        System.out.println("ID: " + getIdentificador());
-        System.out.println("Nombre: " + getNombre());
-        System.out.println("Aceleración Promedio: " + aceleracionPromedio);
-        System.out.println("Grado de Rampa: " + gradoRampa);
+        super.imprimirDatos();
     }
 }

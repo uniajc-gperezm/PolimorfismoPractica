@@ -9,6 +9,7 @@ package polimorfismopractica;
  * @author g.perezmoreno
  */
 
+
 public abstract class Ciclista {
     private int identificador;
     private String nombre;

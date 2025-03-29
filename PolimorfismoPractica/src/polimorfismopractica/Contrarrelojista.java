@@ -4,7 +4,7 @@ package polimorfismopractica;
 public class Contrarrelojista extends Ciclista{
     private double velocidadMaxima;
     
-    public Contrarrelojista(int identificador, String name, double velocidadMaxima){
+    public Contrarrelojista(int identificador, String name, double velocidadMaxima) {
         super(identificador, name);
         this.velocidadMaxima = velocidadMaxima;
     }
@@ -13,7 +13,7 @@ public class Contrarrelojista extends Ciclista{
         return velocidadMaxima;
     }
     
-    public void setVelocidadMaxima(double velocidadMaxima){
+    public void setVelocidadMaxima(double velocidadMaxima) {
         this.velocidadMaxima = velocidadMaxima;
     }
     

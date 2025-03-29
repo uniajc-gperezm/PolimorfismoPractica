@@ -5,7 +5,7 @@ public class Velocista extends Ciclista{
     private double potenciaPromedio;
     private double velocidadPromedioSprint;
     
-    public Velocista(int identificador, String name, double potenciaPromedio, double valocidadPromedioSprint){
+    public Velocista(int identificador, String name, double potenciaPromedio, double velocidadPromedioSprint){
         super(identificador, name);
         this.potenciaPromedio = potenciaPromedio;
         this.velocidadPromedioSprint = velocidadPromedioSprint;

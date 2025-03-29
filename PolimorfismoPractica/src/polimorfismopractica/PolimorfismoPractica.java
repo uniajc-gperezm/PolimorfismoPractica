@@ -17,12 +17,14 @@ public class PolimorfismoPractica {
         Equipo equipo = new Equipo("Team A", "Colombia");
         
         Velocista Ve1 = new Velocista(1, "Rigo", 450, 60);
-        Escalador Es1 = new Escalador(2, "Nairo Quintana", 2.5f, 15);
-        Contrarrelojista Contra1 = new Contrarrelojista (3, "Juan", 55);
-        
         Ve1.setTiempoAcumulado(110);
-        Es1.setTiempoAcumulado(120);
-        Contra1.setTiempoAcumulado(100);
+        
+        Escalador Es1 = new Escalador(2, "Nairo Quintana", 2.5f, 15f);
+        Es1.setTiempoAcumulado(130);
+        
+        Contrarrelojista Contra1 = new Contrarrelojista(3, "Juan", 47f);
+        Contra1.setTiempoAcumulado(105);
+        
         
         equipo.añadirCiclista(Ve1);
         System.out.println("");

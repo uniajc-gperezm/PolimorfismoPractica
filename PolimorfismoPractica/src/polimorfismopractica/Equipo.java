@@ -47,6 +47,7 @@ public class Equipo {
     
     public void añadirCiclista(Ciclista ciclista){
         ciclistas.add(ciclista);
+        calcularTiempoTotal();
     }
     
    public void calcularTiempoTotal() {
@@ -62,7 +63,7 @@ public class Equipo {
     
     public void listarNombresCiclistas(){
         for(Ciclista C : ciclistas){
-           System.out.println(C.getName()); 
+           System.out.println(C.getName());
         }
     }
     

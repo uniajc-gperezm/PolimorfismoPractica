@@ -8,14 +8,15 @@ package polimorfismopractica;
  *
  * @author g.perezmoreno
  */
+
 public abstract class Ciclista {
     private int identificador;
-    private String name;
+    private String nombre;
     private int tiempoAcumulado;
 
-    public Ciclista(int identificador, String name) {
+    public Ciclista(int identificador, String nombre) {
         this.identificador = identificador;
-        this.name = name;
+        this.nombre = nombre;
     }
 
     public int getIdentificador() {
@@ -26,12 +27,12 @@ public abstract class Ciclista {
         this.identificador = identificador;
     }
 
-    public String getName() {
-        return name;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public int getTiempoAcumulado() {
@@ -41,11 +42,12 @@ public abstract class Ciclista {
     public void setTiempoAcumulado(int tiempoAcumulado) {
         this.tiempoAcumulado = tiempoAcumulado;
     }
-    
-    abstract String imprimirTipo();
-    
-    public void imprimirDatos(){
-        
+
+    public abstract String imprimirTipo();
+
+    public void imprimirDatos() {
+        System.out.println("Identificador: " + identificador);
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Tiempo Acumulado: " + tiempoAcumulado);
     }
-    
 }

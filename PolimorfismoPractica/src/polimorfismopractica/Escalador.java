@@ -1,14 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package polimorfismopractica;
-
-/**
- *
- * @author EIMY TATIANA CORAL M
- */
-
 public class Escalador extends Ciclista {
     private float aceleracionPromedio;
     private float gradoRampa;
